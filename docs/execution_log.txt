@@ -1,0 +1,14 @@
+$ docker compose up -d
+(MySQL 8.0 container started, healthcheck passed)
+
+$ pip install -r requirements.txt
+Successfully installed mysql-connector-python-8.4.0 python-dotenv-1.1.1
+
+$ python3 ticket_pipeline.py data/third_party_sales_1.csv
+Ensured table 'sales' exists (from create_sales_table.sql)
+Loaded 6 rows from data/third_party_sales_1.csv into 'sales'
+Here are the most popular tickets in the past month:
+- Washington Spirits vs Sky Blue FC
+- Christmas Spectacular
+- The North American International Auto Show
+- Carlisle Ford Nationals
